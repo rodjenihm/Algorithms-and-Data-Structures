@@ -14,13 +14,10 @@ public class List<Type> implements Iterable<Type> {
     public void add(Type value) {
         Node node = new Node(value, null);
 
-        if (root != null) {
-            tail.next = node;
-            tail = node;
-        } else {
-            root = node;
-            tail = node;
-        }
+        if (root != null) tail.next = node;
+        else root = node;
+
+        tail = node;
         size++;
     }
 
