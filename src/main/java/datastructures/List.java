@@ -12,9 +12,7 @@ public class List<Type> implements Iterable<Type> {
     }
 
     public void add(Type value) {
-        Node node = new Node();
-        node.value = value;
-        node.next = null;
+        Node node = new Node(value, null);
 
         if (root != null) {
             tail.next = node;
@@ -55,5 +53,10 @@ public class List<Type> implements Iterable<Type> {
     class Node {
         Type value;
         Node next;
+
+        Node(Type value, Node next) {
+            this.value = value;
+            this.next = next;
+        }
     }
 }
