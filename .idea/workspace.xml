@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a243d109-5763-4b9b-b636-e32e0b03f22b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/SinglyLinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,20 +19,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/List.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/SinglyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="176">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,11 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -57,6 +53,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>List</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>SInglyLinkedList</replace>
+      <replace>SinglyLinkedList</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -64,6 +69,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/datastructures/test/ListTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/List.java" />
         <option value="$PROJECT_DIR$/src/main/java/Program.java" />
       </list>
@@ -76,7 +82,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -88,6 +94,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,7 +132,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ListTests.size_emptyList_returnsZero">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="algorithms-and-data-structures" />
@@ -159,8 +165,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListTests.size_emptyList_returnsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms-and-data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datastructures.test" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.test.ListTests" />
+      <option name="METHOD_NAME" value="size_emptyList_returnsZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ListTests.size_emptyList_returnsZero" />
         <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
@@ -177,18 +200,25 @@
       <updated>1564951176620</updated>
       <workItem from="1564951179224" duration="828000" />
       <workItem from="1564959287246" duration="2452000" />
-      <workItem from="1564964141048" duration="4135000" />
+      <workItem from="1564964141048" duration="5995000" />
+      <workItem from="1564980495472" duration="831000" />
+      <workItem from="1565010023397" duration="502000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ListTests_size_emptyList_returnsZero - 2019.08.05 at 06h 55m 06s.xml">
+      <configuration name="ListTests.size_emptyList_returnsZero" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7415000" />
+    <option name="totallyTimeSpent" value="10608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -197,7 +227,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,34 +255,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="418">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/List.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/datastructures/test/ListTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

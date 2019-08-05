@@ -2,7 +2,7 @@ package datastructures;
 
 import java.util.Iterator;
 
-public class List<Type> implements Iterable<Type> {
+public class SinglyLinkedList<Type> implements Iterable<Type> {
     private Node root = null;
     private Node tail = null;
     private int size = 0;
@@ -22,13 +22,13 @@ public class List<Type> implements Iterable<Type> {
     }
 
     public Iterator<Type> iterator() {
-        return new ListIterator(root);
+        return new SinglyLinkedListIterator(root);
     }
 
-    class ListIterator implements Iterator<Type>{
+    class SinglyLinkedListIterator implements Iterator<Type>{
         Node current;
 
-        ListIterator (Node root) {
+        SinglyLinkedListIterator (Node root) {
             this.current = root;
         }
 

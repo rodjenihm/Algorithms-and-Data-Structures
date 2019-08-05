@@ -1,10 +1,8 @@
-import datastructures.List;
-
-import java.util.Iterator;
+import datastructures.SinglyLinkedList;
 
 public class Program {
     public static void main(String[] args) {
-        List<Integer> list = new List<Integer>();
+        SinglyLinkedList<Integer> list = new SinglyLinkedList<Integer>();
         list.add(3);
         list.add(5);
         list.add(7);
