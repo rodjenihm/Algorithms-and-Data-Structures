@@ -11,7 +11,7 @@ public class SinglyLinkedList<Type> implements Iterable<Type> {
         return size;
     }
 
-    public void add(Type value) {
+    public boolean add(Type value) {
         Node node = new Node(value, null);
 
         if (root != null) tail.next = node;
@@ -19,21 +19,26 @@ public class SinglyLinkedList<Type> implements Iterable<Type> {
 
         tail = node;
         size++;
+        return true;
+    }
+
+    public boolean isEmpty() {
+        return root == null;
     }
 
     public Iterator<Type> iterator() {
         return new SinglyLinkedListIterator(root);
     }
 
-    class SinglyLinkedListIterator implements Iterator<Type>{
+    class SinglyLinkedListIterator implements Iterator<Type> {
         Node current;
 
-        SinglyLinkedListIterator (Node root) {
+        SinglyLinkedListIterator(Node root) {
             this.current = root;
         }
 
         public boolean hasNext() {
-            return  current != null;
+            return current != null;
         }
 
         public Type next() {
