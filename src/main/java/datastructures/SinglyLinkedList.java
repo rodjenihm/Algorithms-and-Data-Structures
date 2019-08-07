@@ -1,8 +1,9 @@
 package datastructures;
 
 import java.util.Iterator;
+import java.util.function.Predicate;
 
-public class SinglyLinkedList<Type> implements Iterable<Type> {
+public class SinglyLinkedList<E> implements Iterable<E> {
     private Node root = null;
     private Node tail = null;
     private int size = 0;
@@ -15,8 +16,28 @@ public class SinglyLinkedList<Type> implements Iterable<Type> {
         return root == null;
     }
 
-    public boolean add(Type value) {
-        Node node = new Node(value, null);
+    public boolean contains(E element) {
+        Node iterator = root;
+        while (iterator != null) {
+            if (iterator.element == element) return true;
+            iterator = iterator.next;
+        }
+        return false;
+    }
+
+    public void clear() {
+        Node iterator = root;
+        root = null;
+        size = 0;
+        while (iterator != null) {
+            Node temp = iterator;
+            iterator = iterator.next;
+            temp.next = null;
+        }
+    }
+
+    public boolean add(E element) {
+        Node node = new Node(element, null);
 
         if (root != null) tail.next = node;
         else root = node;
@@ -26,11 +47,11 @@ public class SinglyLinkedList<Type> implements Iterable<Type> {
         return true;
     }
 
-    public Iterator<Type> iterator() {
+    public Iterator<E> iterator() {
         return new SinglyLinkedListIterator(root);
     }
 
-    class SinglyLinkedListIterator implements Iterator<Type> {
+    class SinglyLinkedListIterator implements Iterator<E> {
         Node current;
 
         SinglyLinkedListIterator(Node root) {
@@ -41,10 +62,10 @@ public class SinglyLinkedList<Type> implements Iterable<Type> {
             return current != null;
         }
 
-        public Type next() {
-            Type value = current.value;
+        public E next() {
+            E element = current.element;
             current = current.next;
-            return value;
+            return element;
         }
 
         public void remove() {
@@ -53,14 +74,14 @@ public class SinglyLinkedList<Type> implements Iterable<Type> {
     }
 
     class Node {
-        Type value;
+        E element;
         Node next;
 
         Node() {
         }
 
-        Node(Type value, Node next) {
-            this.value = value;
+        Node(E element, Node next) {
+            this.element = element;
             this.next = next;
         }
     }

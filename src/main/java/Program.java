@@ -1,4 +1,5 @@
 import datastructures.SinglyLinkedList;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 
 public class Program {
@@ -20,6 +21,11 @@ public class Program {
 
         System.out.println("Is list empty: " + list.isEmpty());
         System.out.println("List size: " + list.size());
-        System.out.println("Can I add number -1 to list? " + list.add(-1));
+        System.out.println("List contains 3: " + list.contains(3));
+        System.out.println("List contains -1: " + list.contains(-1));
+
+        list.clear();
+        System.out.println(list.isEmpty());
+        System.out.println(list.size());
     }
 }
