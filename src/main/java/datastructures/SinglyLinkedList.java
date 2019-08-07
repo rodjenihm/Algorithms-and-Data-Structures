@@ -28,6 +28,14 @@ public class SinglyLinkedList<E> implements Iterable<E> {
         return false;
     }
 
+    public boolean containsAll(Collection<E> collection) {
+        boolean result = true;
+        for (E element : collection) {
+            result &= contains(element);
+        }
+        return result;
+    }
+
     public void clear() {
         Node iterator = root;
         root = null;
