@@ -1,6 +1,8 @@
 package datastructures;
 
+import java.util.Collection;
 import java.util.Iterator;
+import java.util.Objects;
 
 public class SinglyLinkedList<E> implements Iterable<E> {
     private Node root = null;
@@ -47,6 +49,17 @@ public class SinglyLinkedList<E> implements Iterable<E> {
 
         tail = node;
         size++;
+        return true;
+    }
+
+    public boolean addAll(Collection<E> collection) {
+        if (collection == null) throw new NullPointerException("Source collection is null");
+        if (collection.stream().anyMatch(Objects::isNull))
+            throw new NullPointerException("source collection contains null element");
+
+        for (E element : collection) {
+            add(element);
+        }
         return true;
     }
 
