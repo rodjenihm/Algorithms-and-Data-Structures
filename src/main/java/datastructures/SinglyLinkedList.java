@@ -1,7 +1,6 @@
 package datastructures;
 
 import java.util.Iterator;
-import java.util.function.Predicate;
 
 public class SinglyLinkedList<E> implements Iterable<E> {
     private Node root = null;
@@ -17,6 +16,8 @@ public class SinglyLinkedList<E> implements Iterable<E> {
     }
 
     public boolean contains(E element) {
+        if (element == null) throw new NullPointerException();
+
         Node iterator = root;
         while (iterator != null) {
             if (iterator.element == element) return true;
@@ -37,6 +38,8 @@ public class SinglyLinkedList<E> implements Iterable<E> {
     }
 
     public boolean add(E element) {
+        if (element == null) throw new NullPointerException();
+
         Node node = new Node(element, null);
 
         if (root != null) tail.next = node;
