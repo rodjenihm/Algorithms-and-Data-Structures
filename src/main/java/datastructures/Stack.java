@@ -6,6 +6,10 @@ public class Stack<E> {
     private Node stackPointer = null;
     private int size = 0;
 
+    public int size() {
+        return size;
+    }
+
     public boolean empty() {
         return stackPointer == null;
     }
