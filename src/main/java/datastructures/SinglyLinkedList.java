@@ -1,6 +1,7 @@
 package datastructures;
 
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Objects;
 
@@ -20,19 +21,40 @@ public class SinglyLinkedList<E> implements Iterable<E> {
     public boolean contains(E element) {
         if (element == null) throw new NullPointerException();
 
-        Node iterator = root;
-        while (iterator != null) {
-            if (iterator.element == element) return true;
-            iterator = iterator.next;
+        for (E e : this) {
+            if (element == e) return true;
         }
+
+        return false;
+    }
+
+    public boolean contains(E element, Comparator<E> c) {
+        if (element == null) throw new NullPointerException();
+
+        for (E e : this) {
+            if (c.compare(element, e) == 0) return true;
+        }
+
         return false;
     }
 
     public boolean containsAll(Collection<E> collection) {
         boolean result = true;
+
         for (E element : collection) {
             result &= contains(element);
         }
+
+        return result;
+    }
+
+    public boolean containsAll(Collection<E> collection, Comparator<E> c) {
+        boolean result = true;
+
+        for (E element : collection) {
+            result &= contains(element, c);
+        }
+
         return result;
     }
 
