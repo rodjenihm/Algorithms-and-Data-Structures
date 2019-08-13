@@ -25,6 +25,11 @@ public class LinkedList<E> implements IList<E> {
     }
 
     @Override
+    public boolean contains(Object o) {
+        return indexOf(o) != -1;
+    }
+
+    @Override
     public void clear() {
         Node iterator = root;
         root = null;
