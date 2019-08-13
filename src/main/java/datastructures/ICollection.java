@@ -1,6 +1,8 @@
 package datastructures;
 
 public interface ICollection<E> extends Iterable<E> {
-    boolean add(E item);
     int size();
+    boolean isEmpty();
+    void clear();
+    boolean add(E item);
 }
