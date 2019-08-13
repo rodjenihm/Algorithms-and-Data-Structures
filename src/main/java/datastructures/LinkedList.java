@@ -2,7 +2,7 @@ package datastructures;
 
 import java.util.Iterator;
 
-public class LinkedList<E> implements ICollection<E> {
+public class LinkedList<E> implements IList<E> {
 
     private int size;
     private Node root;
@@ -19,7 +19,28 @@ public class LinkedList<E> implements ICollection<E> {
         return this.size;
     }
 
+    @Override
+    public boolean isEmpty() {
+        return root == null;
+    }
+
+    @Override
+    public void clear() {
+        Node iterator = root;
+        root = null;
+        tail = null;
+        while (iterator != null) {
+            Node temp = iterator;
+            temp.prev = null;
+            temp.item = null;
+            iterator = iterator.next;
+            temp.next = null;
+        }
+        size = 0;
+    }
+
     //region "Add element"
+    @Override
     public void addFirst(E item) {
         Node newNode = new Node(item);
         if (root == null) {
@@ -35,6 +56,7 @@ public class LinkedList<E> implements ICollection<E> {
         size++;
     }
 
+    @Override
     public void addLast(E item) {
         Node newNode = new Node(item);
         if (root == null) {
