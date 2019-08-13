@@ -144,8 +144,8 @@ public class LinkedList<E> implements IList<E> {
 
         Node(E item) {
             this.item = item;
-            this.prev = null;
-            this.next = null;
+            prev = null;
+            next = null;
         }
 
         Node(E item, Node prev, Node next) {
