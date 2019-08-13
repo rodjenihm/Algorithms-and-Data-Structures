@@ -5,4 +5,5 @@ public interface IList<E> extends ICollection<E> {
     void addLast(E item);
     int indexOf(Object o);
     int lastIndexOf(Object o);
+    Object[] toArray();
 }

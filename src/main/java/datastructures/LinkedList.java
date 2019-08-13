@@ -150,6 +150,18 @@ public class LinkedList<E> implements IList<E> {
         }
     }
 
+    @Override
+    public Object[] toArray() {
+        Object[] output = new Object[size];
+        int idx = 0;
+        Node iterator = root;
+        while (iterator != null) {
+            output[idx++] = iterator.item;
+            iterator = iterator.next;
+        }
+        return output;
+    }
+
     private class LinkedListIterator implements Iterator<E> {
 
         private final LinkedList<E> linkedList;
