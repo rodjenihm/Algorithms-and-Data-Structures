@@ -81,6 +81,52 @@ public class LinkedList<E> implements IList<E> {
     //endregion
 
     @Override
+    public int indexOf(Object o) {
+        int index = 0;
+        if (o == null) {
+            Node iterator = root;
+            while (iterator != null) {
+                if (iterator.item == null)
+                    return index;
+                index++;
+                iterator = iterator.next;
+            }
+        } else {
+            Node iterator = root;
+            while (iterator != null) {
+                if (o.equals(iterator.item))
+                    return index;
+                index++;
+                iterator = iterator.next;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public int lastIndexOf(Object o) {
+        int index = size - 1;
+        if (o == null) {
+            Node iterator = tail;
+            while (iterator != null) {
+                if (iterator.item == null)
+                    return index;
+                index--;
+                iterator = iterator.prev;
+            }
+        } else {
+            Node iterator = tail;
+            while (iterator != null) {
+                if (o.equals(iterator.item))
+                    return index;
+                index--;
+                iterator = iterator.prev;
+            }
+        }
+        return -1;
+    }
+
+    @Override
     public Iterator<E> iterator() {
         return new LinkedListIterator(this);
     }
