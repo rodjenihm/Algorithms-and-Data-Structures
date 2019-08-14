@@ -14,6 +14,24 @@ public class LinkedList<E> implements IList<E> {
         tail = null;
     }
 
+    private boolean isIndexValid(int index) {
+        return index >= 0 && index < size;
+    }
+
+    private Node nodeAtIndex(int index) {
+        if (index < size / 2) {
+            Node iterator = root;
+            for (int i = 0; i < index; i++)
+                iterator = iterator.next;
+            return iterator;
+        } else {
+            Node iterator = tail;
+            for (int i = size - 1; i > index; i--)
+                iterator = iterator.prev;
+            return iterator;
+        }
+    }
+
     @Override
     public int size() {
         return this.size;
@@ -45,7 +63,6 @@ public class LinkedList<E> implements IList<E> {
     }
 
     //region "Add element"
-    @Override
     public void addFirst(E item) {
         Node newNode = new Node(item);
         if (root == null) {
@@ -61,7 +78,6 @@ public class LinkedList<E> implements IList<E> {
         size++;
     }
 
-    @Override
     public void addLast(E item) {
         Node newNode = new Node(item);
         if (root == null) {
@@ -165,6 +181,13 @@ public class LinkedList<E> implements IList<E> {
             iterator = iterator.next;
         }
         return output;
+    }
+
+    @Override
+    public E get(int index) {
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        return nodeAtIndex(index).item;
     }
 
     private class LinkedListIterator implements Iterator<E> {
