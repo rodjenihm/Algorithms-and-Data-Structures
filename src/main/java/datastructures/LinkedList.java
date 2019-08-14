@@ -106,6 +106,13 @@ public class LinkedList<E> implements IList<E> {
         addLast(item);
         return true;
     }
+
+    @Override
+    public boolean addAll(ICollection<? extends E> c) {
+        for (E item : c)
+            add(item);
+        return true;
+    }
     //endregion
 
     @Override
