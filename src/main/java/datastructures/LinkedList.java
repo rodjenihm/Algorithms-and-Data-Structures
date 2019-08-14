@@ -16,6 +16,11 @@ public class LinkedList<E> implements IList<E> {
         root = null;
         tail = null;
     }
+
+    public LinkedList(ICollection<? extends E> c) {
+        this();
+        addAll(c);
+    }
     //endregion
 
     //region "Private methods"
