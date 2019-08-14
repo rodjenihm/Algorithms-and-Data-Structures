@@ -6,4 +6,5 @@ public interface ICollection<E> extends Iterable<E> {
     boolean contains(Object o);
     void clear();
     boolean add(E item);
+    boolean addAll(ICollection<? extends E> c);
 }
