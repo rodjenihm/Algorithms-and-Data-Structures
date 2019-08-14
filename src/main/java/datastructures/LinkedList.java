@@ -114,6 +114,8 @@ public class LinkedList<E> implements IList<E> {
 
     @Override
     public boolean addAll(ICollection<? extends E> c) {
+        if (c == null)
+            return false;
         for (E item : c)
             add(item);
         return true;
