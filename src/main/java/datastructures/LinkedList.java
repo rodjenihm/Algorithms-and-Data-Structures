@@ -4,16 +4,21 @@ import java.util.Iterator;
 
 public class LinkedList<E> implements IList<E> {
 
+    //region "Private fields"
     private int size;
     private Node root;
     private Node tail;
+    //endregion
 
+    //region "Constructors"
     public LinkedList() {
         size = 0;
         root = null;
         tail = null;
     }
+    //endregion
 
+    //region "Private methods"
     private boolean isIndexValid(int index) {
         return index >= 0 && index < size;
     }
@@ -31,7 +36,9 @@ public class LinkedList<E> implements IList<E> {
             return iterator;
         }
     }
+    //endregion
 
+    //region "Public methods"
     @Override
     public int size() {
         return this.size;
@@ -148,9 +155,29 @@ public class LinkedList<E> implements IList<E> {
     }
 
     @Override
+    public Object[] toArray() {
+        Object[] output = new Object[size];
+        int idx = 0;
+        Node iterator = root;
+        while (iterator != null) {
+            output[idx++] = iterator.item;
+            iterator = iterator.next;
+        }
+        return output;
+    }
+
+    @Override
+    public E get(int index) {
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        return nodeAtIndex(index).item;
+    }
+
+    @Override
     public Iterator<E> iterator() {
         return new LinkedListIterator(this);
     }
+    //endregion
 
     private class Node {
 
@@ -169,25 +196,6 @@ public class LinkedList<E> implements IList<E> {
             this.prev = prev;
             this.next = next;
         }
-    }
-
-    @Override
-    public Object[] toArray() {
-        Object[] output = new Object[size];
-        int idx = 0;
-        Node iterator = root;
-        while (iterator != null) {
-            output[idx++] = iterator.item;
-            iterator = iterator.next;
-        }
-        return output;
-    }
-
-    @Override
-    public E get(int index) {
-        if (!isIndexValid(index))
-            throw new IndexOutOfBoundsException();
-        return nodeAtIndex(index).item;
     }
 
     private class LinkedListIterator implements Iterator<E> {
