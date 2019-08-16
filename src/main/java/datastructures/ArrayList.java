@@ -1,14 +1,15 @@
 package datastructures;
 
+import java.lang.reflect.Array;
 import java.util.Iterator;
 
 public class ArrayList<E> implements IList<E> {
 
     //region "Private fields"
-    private final static Object[] emptyArray = {};
+    private final static int defaultCapacity = 10;
     private Object[] elements;
     private int capacity;
-    private int size = 0;
+    private int size;
     //endregion
 
     //region "Constructors"
@@ -19,11 +20,13 @@ public class ArrayList<E> implements IList<E> {
     public ArrayList(int initialCapacity) {
         if (initialCapacity < 0)
             throw new IllegalArgumentException("ArrayList capacity illegal: " + initialCapacity);
-        if (initialCapacity > 0)
+        if (initialCapacity == 0) {
+            elements = new Object[defaultCapacity];
+            capacity = defaultCapacity;
+        } else {
             elements = new Object[initialCapacity];
-        else
-            elements = emptyArray;
-        capacity = initialCapacity;
+            capacity = initialCapacity;
+        }
         size = 0;
     }
     //endregion
@@ -31,6 +34,19 @@ public class ArrayList<E> implements IList<E> {
     //region "Private methods"
     private boolean isIndexValid(int index) {
         return index >= 0 && index < size;
+    }
+
+    private boolean isArrayFull() {
+        return size >= capacity;
+    }
+
+    private void allocateNewArray() {
+        capacity <<= 1;
+        Object[] temp = new Object[capacity];
+        System.arraycopy(elements, 0, temp, 0, size);
+        for (int idx = 0; idx < size; idx++)
+            elements[idx] = null;
+        elements = temp;
     }
     //endregion
 
@@ -98,22 +114,50 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public boolean add(E item) {
-        return false;
+        if (isArrayFull())
+            allocateNewArray();
+        elements[size++] = item;
+        return true;
     }
 
     @Override
     public boolean addAll(ICollection<? extends E> c) {
-        return false;
+        for (E item : c)
+            add(item);
+        return true;
     }
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        Object[] output = new Object[size];
+        System.arraycopy(elements, 0, output, 0, size);
+        return output;
     }
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new ArrayListIterator(this);
     }
+
     //endregion
+    private class ArrayListIterator implements Iterator<E> {
+
+        private Object[] elements;
+        private int index;
+
+        ArrayListIterator(ArrayList arrayList) {
+            this.elements = arrayList.elements;
+            index = -1;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return index + 1 < size;
+        }
+
+        @Override
+        public E next() {
+            return (E) elements[++index];
+        }
+    }
 }
