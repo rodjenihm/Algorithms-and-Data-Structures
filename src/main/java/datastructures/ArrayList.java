@@ -6,10 +6,10 @@ import java.util.Iterator;
 public class ArrayList<E> implements IList<E> {
 
     //region "Private fields"
-    private static Object[] emptyArray = {};
-    private Object[] elements ;
+    private final static Object[] emptyArray = {};
+    private Object[] elements;
     private int capacity;
-    private int size;
+    private int size = 0;
     //endregion
 
     //region "Constructors"
@@ -30,7 +30,9 @@ public class ArrayList<E> implements IList<E> {
     //endregion
 
     //region "Private methods"
-
+    private boolean isIndexValid(int index) {
+        return index >= 0 && index < size;
+    }
     //endregion
 
     //region "Public methods"
@@ -46,7 +48,9 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public E get(int index) {
-        return null;
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        return (E)elements[index];
     }
 
     @Override
@@ -56,7 +60,7 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     @Override
@@ -66,7 +70,9 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public void clear() {
-
+        for (int idx = 0; idx < elements.length; idx++)
+            elements[idx] = null;
+        size = 0;
     }
 
     @Override
