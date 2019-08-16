@@ -1,6 +1,5 @@
 package datastructures;
 
-import java.lang.reflect.Array;
 import java.util.Iterator;
 
 public class ArrayList<E> implements IList<E> {
@@ -38,19 +37,41 @@ public class ArrayList<E> implements IList<E> {
     //region "Public methods"
     @Override
     public int indexOf(Object o) {
-        return 0;
+        if (o == null) {
+            for (int index = 0; index < size; index++) {
+                if (elements[index] == null)
+                    return index;
+            }
+        } else {
+            for (int index = 0; index < size; index++) {
+                if (o.equals(elements[index]))
+                    return index;
+            }
+        }
+        return -1;
     }
 
     @Override
     public int lastIndexOf(Object o) {
-        return 0;
+        if (o == null) {
+            for (int idx = size - 1; idx >= 0; idx--) {
+                if (elements[idx] == null)
+                    return idx;
+            }
+        } else {
+            for (int idx = size - 1; idx >= 0; idx--) {
+                if (o.equals(elements[idx]))
+                    return idx;
+            }
+        }
+        return -1;
     }
 
     @Override
     public E get(int index) {
         if (!isIndexValid(index))
             throw new IndexOutOfBoundsException();
-        return (E)elements[index];
+        return (E) elements[index];
     }
 
     @Override
@@ -65,7 +86,7 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public boolean contains(Object o) {
-        return false;
+        return indexOf(o) != -1;
     }
 
     @Override
