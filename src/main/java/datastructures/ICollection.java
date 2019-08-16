@@ -7,4 +7,5 @@ public interface ICollection<E> extends Iterable<E> {
     void clear();
     boolean add(E item);
     boolean addAll(ICollection<? extends E> c);
+    Object[] toArray();
 }
