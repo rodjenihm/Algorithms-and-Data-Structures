@@ -187,6 +187,14 @@ public class LinkedList<E> implements IList<E> {
         return nodeAtIndex(index).item;
     }
 
+    public E getFirst() {
+        return get(0);
+    }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
     @Override
     public Iterator<E> iterator() {
         return new LinkedListIterator(this);
