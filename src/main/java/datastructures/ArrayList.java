@@ -1,6 +1,5 @@
 package datastructures;
 
-import java.lang.reflect.Array;
 import java.util.Iterator;
 
 public class ArrayList<E> implements IList<E> {
@@ -42,11 +41,11 @@ public class ArrayList<E> implements IList<E> {
 
     private void allocateNewArray() {
         capacity <<= 1;
-        Object[] temp = new Object[capacity];
-        System.arraycopy(elements, 0, temp, 0, size);
+        Object[] newArray = new Object[capacity];
+        System.arraycopy(elements, 0, newArray, 0, size);
         for (int idx = 0; idx < size; idx++)
             elements[idx] = null;
-        elements = temp;
+        elements = newArray;
     }
     //endregion
 
@@ -85,9 +84,9 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public E get(int index) {
-        if (!isIndexValid(index))
-            throw new IndexOutOfBoundsException();
-        return (E) elements[index];
+        if (isIndexValid(index))
+            return (E) elements[index];
+        throw new IndexOutOfBoundsException();
     }
 
     @Override
@@ -140,7 +139,7 @@ public class ArrayList<E> implements IList<E> {
     }
 
     //endregion
-    private class ArrayListIterator implements Iterator<E> {
+    private class ArrayListIterator implements IListIterator<E> {
 
         private Object[] elements;
         private int index;
