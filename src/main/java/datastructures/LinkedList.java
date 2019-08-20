@@ -220,7 +220,7 @@ public class LinkedList<E> implements IList<E> {
         }
     }
 
-    private class LinkedListIterator implements Iterator<E> {
+    private class LinkedListIterator implements IListIterator<E> {
 
         private final LinkedList<E> linkedList;
         private Node iterator;
@@ -228,18 +228,18 @@ public class LinkedList<E> implements IList<E> {
 
         LinkedListIterator(LinkedList<E> linkedList) {
             this.linkedList = linkedList;
-            this.iterator = linkedList.root;
-            this.idx = -1;
+            iterator = linkedList.root;
+            idx = -1;
         }
 
         @Override
         public boolean hasNext() {
-            return ++idx < linkedList.size;
+            return idx + 1 < linkedList.size;
         }
 
         @Override
         public E next() {
-            if (idx > 0) iterator = iterator.next;
+            if (idx++ > -1) iterator = iterator.next;
             return iterator.item;
         }
     }
