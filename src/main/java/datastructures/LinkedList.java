@@ -192,6 +192,14 @@ public class LinkedList<E> implements IList<E> {
         return nodeAtIndex(index).item;
     }
 
+    @Override
+    public E set(int index, E element) {
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        nodeAtIndex(index).item = element;
+        return element;
+    }
+
     public E getFirst() {
         return get(0);
     }

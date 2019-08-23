@@ -88,9 +88,17 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public E get(int index) {
-        if (isIndexValid(index))
-            return (E) elements[index];
-        throw new IndexOutOfBoundsException();
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        return (E) elements[index];
+    }
+
+    @Override
+    public E set(int index, E element) {
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        elements[index] = element;
+        return element;
     }
 
     @Override
