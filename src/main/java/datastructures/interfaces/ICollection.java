@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.interfaces;
 
 public interface ICollection<E> extends Iterable<E> {
     int size();

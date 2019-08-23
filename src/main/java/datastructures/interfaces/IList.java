@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.interfaces;
 
 public interface IList<E> extends ICollection<E> {
     int indexOf(Object o);

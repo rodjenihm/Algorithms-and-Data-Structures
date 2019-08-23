@@ -1,5 +1,9 @@
 package datastructures;
 
+import datastructures.interfaces.ICollection;
+import datastructures.interfaces.IList;
+import datastructures.interfaces.IListIterator;
+
 import java.util.Iterator;
 
 public class ArrayList<E> implements IList<E> {
