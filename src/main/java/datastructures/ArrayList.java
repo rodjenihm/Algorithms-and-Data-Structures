@@ -6,7 +6,7 @@ import datastructures.interfaces.IListIterator;
 
 import java.util.Iterator;
 
-public class ArrayList<E> implements IList<E> {
+public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
     //region "Private fields"
     private final static int defaultCapacity = 10;
@@ -101,20 +101,20 @@ public class ArrayList<E> implements IList<E> {
         return element;
     }
 
-    @Override
-    public int size() {
-        return size;
-    }
+//    @Override
+//    public int size() {
+//        return size;
+//    }
 
-    @Override
-    public boolean isEmpty() {
-        return size == 0;
-    }
+//    @Override
+//    public boolean isEmpty() {
+//        return size == 0;
+//    }
 
-    @Override
-    public boolean contains(Object o) {
-        return indexOf(o) != -1;
-    }
+//    @Override
+//    public boolean contains(Object o) {
+//        return indexOf(o) != -1;
+//    }
 
     @Override
     public void clear() {
