@@ -48,22 +48,6 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
     //endregion
 
     //region "Public methods"
-
-//    @Override
-//    public int size() {
-//        return this.size;
-//    }
-
-//    @Override
-//    public boolean isEmpty() {
-//        return root == null;
-//    }
-
-//    @Override
-//    public boolean contains(Object o) {
-//        return indexOf(o) != -1;
-//    }
-
     @Override
     public void clear() {
         Node iterator = root;

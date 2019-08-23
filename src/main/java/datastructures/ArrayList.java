@@ -101,21 +101,6 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
         return element;
     }
 
-//    @Override
-//    public int size() {
-//        return size;
-//    }
-
-//    @Override
-//    public boolean isEmpty() {
-//        return size == 0;
-//    }
-
-//    @Override
-//    public boolean contains(Object o) {
-//        return indexOf(o) != -1;
-//    }
-
     @Override
     public void clear() {
         for (int idx = 0; idx < elements.length; idx++)
