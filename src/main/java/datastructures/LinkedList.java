@@ -7,10 +7,9 @@ import datastructures.interfaces.IListIterator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class LinkedList<E> implements IList<E> {
+public class LinkedList<E> extends AbstractList<E> implements IList<E> {
 
     //region "Private fields"
-    private int size;
     private Node root;
     private Node tail;
     //endregion
@@ -49,20 +48,21 @@ public class LinkedList<E> implements IList<E> {
     //endregion
 
     //region "Public methods"
-    @Override
-    public int size() {
-        return this.size;
-    }
 
-    @Override
-    public boolean isEmpty() {
-        return root == null;
-    }
+//    @Override
+//    public int size() {
+//        return this.size;
+//    }
 
-    @Override
-    public boolean contains(Object o) {
-        return indexOf(o) != -1;
-    }
+//    @Override
+//    public boolean isEmpty() {
+//        return root == null;
+//    }
+
+//    @Override
+//    public boolean contains(Object o) {
+//        return indexOf(o) != -1;
+//    }
 
     @Override
     public void clear() {
