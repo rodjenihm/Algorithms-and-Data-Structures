@@ -139,28 +139,50 @@ public class ArrayList<E> implements IList<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new ArrayListIterator(this);
+        return listIterator();
     }
 
+    @Override
+    public IListIterator<E> listIterator() {
+        return listIterator(0);
+    }
+
+    @Override
+    public IListIterator<E> listIterator(int index) {
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        return new ArrayListIterator(this, index);
+    }
     //endregion
+
     private class ArrayListIterator implements IListIterator<E> {
 
         private Object[] elements;
-        private int index;
+        private int idx;
 
-        ArrayListIterator(ArrayList arrayList) {
+        ArrayListIterator(ArrayList arrayList, int index) {
             this.elements = arrayList.elements;
-            index = -1;
+            idx = index;
         }
 
         @Override
         public boolean hasNext() {
-            return index + 1 < size;
+            return idx < size;
         }
 
         @Override
         public E next() {
-            return (E) elements[++index];
+            return (E) elements[idx++];
+        }
+
+        @Override
+        public boolean hasPrevious() {
+            return idx > -1;
+        }
+
+        @Override
+        public E previous() {
+            return (E) elements[idx--];
         }
     }
 }

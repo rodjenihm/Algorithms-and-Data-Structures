@@ -205,10 +205,12 @@ public class LinkedList<E> implements IList<E> {
         return listIterator();
     }
 
+    @Override
     public IListIterator<E> listIterator() {
         return listIterator(0);
     }
 
+    @Override
     public IListIterator<E> listIterator(int index) {
         if (!isIndexValid(index))
             throw new IndexOutOfBoundsException();
@@ -261,6 +263,21 @@ public class LinkedList<E> implements IList<E> {
             E value = iterator.item;
             iterator = iterator.next;
             idx++;
+            return value;
+        }
+
+        @Override
+        public boolean hasPrevious() {
+            return idx > -1;
+        }
+
+        @Override
+        public E previous() {
+            if(!hasNext())
+                throw new NoSuchElementException();
+            E value = iterator.item;
+            iterator = iterator.prev;
+            idx--;
             return value;
         }
     }
