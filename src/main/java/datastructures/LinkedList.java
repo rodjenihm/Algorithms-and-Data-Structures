@@ -1,6 +1,7 @@
 package datastructures;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class LinkedList<E> implements IList<E> {
 
@@ -197,7 +198,17 @@ public class LinkedList<E> implements IList<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new LinkedListIterator(this);
+        return listIterator();
+    }
+
+    public IListIterator<E> listIterator() {
+        return listIterator(0);
+    }
+
+    public IListIterator<E> listIterator(int index) {
+        if (!isIndexValid(index))
+            throw new IndexOutOfBoundsException();
+        return new LinkedListIterator(this, index);
     }
     //endregion
 
@@ -226,21 +237,27 @@ public class LinkedList<E> implements IList<E> {
         private Node iterator;
         private int idx;
 
-        LinkedListIterator(LinkedList<E> linkedList) {
+        LinkedListIterator(LinkedList<E> linkedList, int index) {
             this.linkedList = linkedList;
+            idx = index;
             iterator = linkedList.root;
-            idx = -1;
+            while (index-- > 0)
+                iterator = iterator.next;
         }
 
         @Override
         public boolean hasNext() {
-            return idx + 1 < linkedList.size;
+            return idx < linkedList.size;
         }
 
         @Override
         public E next() {
-            if (idx++ > -1) iterator = iterator.next;
-            return iterator.item;
+            if(!hasNext())
+                throw new NoSuchElementException();
+            E value = iterator.item;
+            iterator = iterator.next;
+            idx++;
+            return value;
         }
     }
 }
