@@ -32,13 +32,14 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
         }
         size = 0;
     }
+
+    public ArrayList(ICollection<? extends E> c) {
+        this();
+        addAll(c);
+    }
     //endregion
 
     //region "Private methods"
-    private boolean isIndexValid(int index) {
-        return index >= 0 && index < size;
-    }
-
     private boolean isArrayFull() {
         return size >= capacity;
     }
