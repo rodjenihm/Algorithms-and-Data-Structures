@@ -8,8 +8,12 @@ import java.util.Iterator;
 public abstract class AbstractList<E> implements IList<E> {
     protected int size;
 
-    protected boolean isIndexValid(int index) {
+    protected boolean isValidIndex(int index) {
         return index >= 0 && index < size;
+    }
+
+    protected boolean isValidIteratorPosition(int index) {
+        return index >= 0 && index <= size;
     }
 
     @Override

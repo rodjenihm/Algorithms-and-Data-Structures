@@ -168,14 +168,14 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
 
     @Override
     public E get(int index) {
-        if (!isIndexValid(index))
+        if (!isValidIndex(index))
             throw new IndexOutOfBoundsException();
         return nodeAtIndex(index).item;
     }
 
     @Override
     public E set(int index, E element) {
-        if (!isIndexValid(index))
+        if (!isValidIndex(index))
             throw new IndexOutOfBoundsException();
         nodeAtIndex(index).item = element;
         return element;
@@ -191,7 +191,7 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
 
     @Override
     public IListIterator<E> listIterator(int index) {
-        if (!isIndexValid(index))
+        if (!isValidIteratorPosition(index))
             throw new IndexOutOfBoundsException();
         return new LinkedListIterator(this, index);
     }
@@ -221,20 +221,20 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         private final LinkedList<E> linkedList;
         private Node iteratorNext;
         private Node iteratorPrev;
-        private int idx;
 
         LinkedListIterator(LinkedList<E> linkedList, int index) {
             this.linkedList = linkedList;
-            idx = index;
+            iteratorPrev = null;
             iteratorNext = linkedList.root;
-            while (index-- > 0)
+            while (index-- > 0) {
+                iteratorPrev = iteratorNext;
                 iteratorNext = iteratorNext.next;
-            iteratorPrev = iteratorNext.prev;
+            }
         }
 
         @Override
         public boolean hasNext() {
-            return idx < linkedList.size;
+            return iteratorNext != null;
         }
 
         @Override
@@ -244,13 +244,12 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
             E value = iteratorNext.item;
             iteratorPrev = iteratorNext;
             iteratorNext = iteratorNext.next;
-            idx++;
             return value;
         }
 
         @Override
         public boolean hasPrevious() {
-            return idx > -1;
+            return iteratorPrev != null;
         }
 
         @Override
@@ -260,7 +259,6 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
             E value = iteratorPrev.item;
             iteratorNext = iteratorPrev;
             iteratorPrev = iteratorPrev.prev;
-            idx--;
             return value;
         }
     }

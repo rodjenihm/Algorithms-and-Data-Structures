@@ -4,7 +4,6 @@ import datastructures.interfaces.ICollection;
 import datastructures.interfaces.IList;
 import datastructures.interfaces.IListIterator;
 
-import java.util.Iterator;
 
 public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
@@ -89,14 +88,14 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
     @Override
     public E get(int index) {
-        if (!isIndexValid(index))
+        if (!isValidIndex(index))
             throw new IndexOutOfBoundsException();
         return (E) elements[index];
     }
 
     @Override
     public E set(int index, E element) {
-        if (!isIndexValid(index))
+        if (!isValidIndex(index))
             throw new IndexOutOfBoundsException();
         elements[index] = element;
         return element;
@@ -133,7 +132,7 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
     @Override
     public IListIterator<E> listIterator(int index) {
-        if (!isIndexValid(index))
+        if (!isValidIteratorPosition(index))
             throw new IndexOutOfBoundsException();
         return new ArrayListIterator(this, index);
     }
@@ -142,31 +141,33 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     private class ArrayListIterator implements IListIterator<E> {
 
         private Object[] elements;
-        private int idx;
+        private int idxNext;
+        private int idxPrev;
 
         ArrayListIterator(ArrayList arrayList, int index) {
             this.elements = arrayList.elements;
-            idx = index;
+            idxNext = index;
+            idxPrev = index - 1;
         }
 
         @Override
         public boolean hasNext() {
-            return idx < size;
+            return idxNext < size;
         }
 
         @Override
         public E next() {
-            return (E) elements[idx++];
+            return (E) elements[idxNext++];
         }
 
         @Override
         public boolean hasPrevious() {
-            return idx > -1;
+            return idxPrev > -1;
         }
 
         @Override
         public E previous() {
-            return (E) elements[idx--];
+            return (E) elements[idxPrev--];
         }
     }
 }
