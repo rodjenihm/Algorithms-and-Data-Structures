@@ -70,6 +70,7 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         } else {
             newNode.prev = null;
             newNode.next = root;
+            root.prev = newNode;
             root = newNode;
         }
         size++;
@@ -218,15 +219,17 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
     private class LinkedListIterator implements IListIterator<E> {
 
         private final LinkedList<E> linkedList;
-        private Node iterator;
+        private Node iteratorNext;
+        private Node iteratorPrev;
         private int idx;
 
         LinkedListIterator(LinkedList<E> linkedList, int index) {
             this.linkedList = linkedList;
             idx = index;
-            iterator = linkedList.root;
+            iteratorNext = linkedList.root;
             while (index-- > 0)
-                iterator = iterator.next;
+                iteratorNext = iteratorNext.next;
+            iteratorPrev = iteratorNext.prev;
         }
 
         @Override
@@ -238,8 +241,9 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         public E next() {
             if(!hasNext())
                 throw new NoSuchElementException();
-            E value = iterator.item;
-            iterator = iterator.next;
+            E value = iteratorNext.item;
+            iteratorPrev = iteratorNext;
+            iteratorNext = iteratorNext.next;
             idx++;
             return value;
         }
@@ -251,10 +255,11 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
 
         @Override
         public E previous() {
-            if(!hasNext())
+            if(!hasPrevious())
                 throw new NoSuchElementException();
-            E value = iterator.item;
-            iterator = iterator.prev;
+            E value = iteratorPrev.item;
+            iteratorNext = iteratorPrev;
+            iteratorPrev = iteratorPrev.prev;
             idx--;
             return value;
         }
