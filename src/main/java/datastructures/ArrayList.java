@@ -132,16 +132,6 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     }
 
     @Override
-    public Iterator<E> iterator() {
-        return listIterator();
-    }
-
-    @Override
-    public IListIterator<E> listIterator() {
-        return listIterator(0);
-    }
-
-    @Override
     public IListIterator<E> listIterator(int index) {
         if (!isIndexValid(index))
             throw new IndexOutOfBoundsException();

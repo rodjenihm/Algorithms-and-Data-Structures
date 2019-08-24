@@ -28,10 +28,6 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
     //endregion
 
     //region "Private methods"
-    private boolean isIndexValid(int index) {
-        return index >= 0 && index < size;
-    }
-
     private Node nodeAtIndex(int index) {
         if (index < size / 2) {
             Node iterator = root;
@@ -190,16 +186,6 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
 
     public E getLast() {
         return get(size - 1);
-    }
-
-    @Override
-    public Iterator<E> iterator() {
-        return listIterator();
-    }
-
-    @Override
-    public IListIterator<E> listIterator() {
-        return listIterator(0);
     }
 
     @Override
