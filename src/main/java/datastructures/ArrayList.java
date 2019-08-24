@@ -136,6 +136,13 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
             throw new IndexOutOfBoundsException();
         return new ArrayListIterator(this, index);
     }
+
+    public void ensureCapacity(int minCapacity) {
+        if (minCapacity > capacity) {
+            allocateNewArray();
+            capacity = minCapacity;
+        }
+    }
     //endregion
 
     private class ArrayListIterator implements IListIterator<E> {
