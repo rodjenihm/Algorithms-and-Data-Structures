@@ -135,6 +135,16 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     }
 
     @Override
+    public E remove(int index) {
+        if (!isValidIndex(index))
+            throw new IndexOutOfBoundsException();
+        E item = (E) elements[index];
+        System.arraycopy(elements, index + 1, elements, index, size - 1 - index);
+        size--;
+        return item;
+    }
+
+    @Override
     public Object[] toArray() {
         Object[] output = new Object[size];
         System.arraycopy(elements, 0, output, 0, size);

@@ -147,19 +147,19 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
     public E removeFirst() {
         if (isEmpty())
             throw new NoSuchElementException();
-        E value = root.item;
+        E item = root.item;
         unlinkFirst();
         size--;
-        return value;
+        return item;
     }
 
     public E removeLast() {
         if (isEmpty())
             throw new NoSuchElementException();
-        E value = tail.item;
+        E item = tail.item;
         unlinkLast();
         size--;
-        return value;
+        return item;
     }
 
     @Override
@@ -173,7 +173,28 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
             unlinkLast();
         else
             unlink(nodeAtIndex(indexToRemove));
+        size--;
         return true;
+    }
+
+    @Override
+    public E remove(int index) {
+        if (!isValidIndex(index))
+            throw new IndexOutOfBoundsException();
+        E item;
+        if (index == 0) {
+            item = root.item;
+            unlinkFirst();
+        } else if (index == size - 1) {
+            item = tail.item;
+            unlinkLast();
+        } else {
+            Node toRemove = nodeAtIndex(index);
+            item = toRemove.item;
+            unlink(toRemove);
+        }
+        size--;
+        return item;
     }
 
     @Override
@@ -309,10 +330,10 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         public E next() {
             if(!hasNext())
                 throw new NoSuchElementException();
-            E value = iteratorNext.item;
+            E item = iteratorNext.item;
             iteratorPrev = iteratorNext;
             iteratorNext = iteratorNext.next;
-            return value;
+            return item;
         }
 
         @Override
@@ -324,10 +345,10 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         public E previous() {
             if(!hasPrevious())
                 throw new NoSuchElementException();
-            E value = iteratorPrev.item;
+            E item = iteratorPrev.item;
             iteratorNext = iteratorPrev;
             iteratorPrev = iteratorPrev.prev;
-            return value;
+            return item;
         }
     }
 }
