@@ -162,6 +162,7 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         return value;
     }
 
+    @Override
     public boolean remove(Object o) {
         int indexToRemove = indexOf(o);
         if (indexToRemove == -1)

@@ -4,6 +4,8 @@ import datastructures.interfaces.ICollection;
 import datastructures.interfaces.IList;
 import datastructures.interfaces.IListIterator;
 
+import java.util.NoSuchElementException;
+
 
 public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
@@ -11,7 +13,6 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     private final static int defaultCapacity = 10;
     private Object[] elements;
     private int capacity;
-    private int size;
     //endregion
 
     //region "Constructors"
@@ -124,6 +125,16 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     }
 
     @Override
+    public boolean remove(Object o) {
+        int indexToRemove = indexOf(o);
+        if (indexToRemove == -1)
+            return false;
+        System.arraycopy(elements, indexToRemove + 1, elements, indexToRemove, size - 1 - indexToRemove);
+        size--;
+        return true;
+    }
+
+    @Override
     public Object[] toArray() {
         Object[] output = new Object[size];
         System.arraycopy(elements, 0, output, 0, size);
@@ -148,11 +159,13 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     private class ArrayListIterator implements IListIterator<E> {
 
         private Object[] elements;
+        private int size;
         private int idxNext;
         private int idxPrev;
 
         ArrayListIterator(ArrayList arrayList, int index) {
             this.elements = arrayList.elements;
+            size = arrayList.size;
             idxNext = index;
             idxPrev = index - 1;
         }
@@ -164,6 +177,8 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
         @Override
         public E next() {
+            if(!hasNext())
+                throw new NoSuchElementException();
             return (E) elements[idxNext++];
         }
 
@@ -174,6 +189,8 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
 
         @Override
         public E previous() {
+            if(!hasPrevious())
+                throw new NoSuchElementException();
             return (E) elements[idxPrev--];
         }
     }
