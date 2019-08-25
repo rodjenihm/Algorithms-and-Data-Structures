@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,85 +20,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#1239#1240#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#4465#4466#0" expanded="true" />
-                <element signature="e#4494#4495#0" expanded="true" />
-                <element signature="e#4520#4521#0" expanded="true" />
-                <element signature="e#4556#4557#0" expanded="true" />
-                <element signature="e#4648#4649#0" expanded="true" />
-                <element signature="e#4684#4685#0" expanded="true" />
-                <element signature="e#4752#4753#0" expanded="true" />
-                <element signature="e#4788#4789#0" expanded="true" />
-                <element signature="e#5412#5413#0" expanded="true" />
-                <element signature="e#5468#5469#0" expanded="true" />
-                <element signature="e#6298#6299#0" expanded="true" />
-                <element signature="e#6335#6336#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ProgramLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
+            <state relative-caret-position="484">
+              <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#3441#3442#0" expanded="true" />
-                <element signature="e#3478#3479#0" expanded="true" />
-                <element signature="e#3524#3525#0" expanded="true" />
-                <element signature="e#3562#3563#0" expanded="true" />
-                <element signature="e#4101#4102#0" expanded="true" />
-                <element signature="e#4146#4147#0" expanded="true" />
-                <element signature="e#4191#4192#0" expanded="true" />
-                <element signature="e#4241#4242#0" expanded="true" />
-                <element signature="e#4299#4300#0" expanded="true" />
-                <element signature="e#4335#4336#0" expanded="true" />
-                <element signature="e#4384#4385#0" expanded="true" />
-                <element signature="e#4419#4420#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="e#4160#4161#0" expanded="true" />
+                <element signature="e#4205#4206#0" expanded="true" />
+                <element signature="e#4362#4363#0" expanded="true" />
+                <element signature="e#4405#4406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="310" column="51" lean-forward="true" selection-start-line="309" selection-start-column="12" selection-end-line="310" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ProgramArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,13 +116,15 @@
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ICollection.java" />
         <option value="$PROJECT_DIR$/src/main/java/Program.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ProgramArrayList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ProgramArrayList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/IListIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ProgramUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ProgramLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructures/AbstractList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ProgramArrayList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ProgramLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java" />
       </list>
     </option>
@@ -186,6 +147,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,8 +195,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProgramLinkedList">
+  <component name="RunManager" selected="Application.ProgramArrayList">
     <configuration name="ProgramArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProgramArrayList" />
       <module name="algorithms-and-data-structures" />
@@ -303,9 +264,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProgramArrayList" />
         <item itemvalue="Application.ProgramLinkedList" />
         <item itemvalue="Application.ProgramUtils" />
-        <item itemvalue="Application.ProgramArrayList" />
         <item itemvalue="Application.ProgramStack" />
         <item itemvalue="Application.ProgramSinglyLinkedList" />
       </list>
@@ -351,14 +312,12 @@
       <workItem from="1566562286181" duration="920000" />
       <workItem from="1566563319502" duration="126000" />
       <workItem from="1566563532272" duration="513000" />
-      <workItem from="1566564657918" duration="4759000" />
-    </task>
-    <task id="LOCAL-00001" summary="Update SinglyLinkedList">
-      <created>1565049191852</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1565049191852</updated>
+      <workItem from="1566564657918" duration="11220000" />
+      <workItem from="1566627968382" duration="5006000" />
+      <workItem from="1566637169428" duration="1495000" />
+      <workItem from="1566644934239" duration="4145000" />
+      <workItem from="1566717303471" duration="2409000" />
+      <workItem from="1566735330133" duration="5890000" />
     </task>
     <task id="LOCAL-00002" summary="Update SinglyLinkedList">
       <created>1565207458145</created>
@@ -591,7 +550,119 @@
       <option name="project" value="LOCAL" />
       <updated>1566569546609</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Update IList: Added listIterator and listIterator(index) methods.">
+      <created>1566570583937</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1566570583937</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Update IListIterator: Added hasPrevious and previous methods.">
+      <created>1566570607940</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1566570607940</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Update ArrayList, LinkedList: Implemented listIterator, listIterator(index) methods.">
+      <created>1566570650323</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1566570650323</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Update">
+      <created>1566570662504</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1566570662504</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Update ArrayList, LinkedList: Implemented set method.">
+      <created>1566575196760</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1566575196760</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update IList: Added set method.">
+      <created>1566575225991</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1566575225991</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added AbstractList. Class to be extended by other IList implementations in order to limit code repetitions.">
+      <created>1566603645478</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1566603645478</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Update ArrayList: extends AbstractList.">
+      <created>1566603676266</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1566603676266</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update LinkedList: extends AbstractList.">
+      <created>1566603693107</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1566603693107</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Update LinkedList, ArrayList.">
+      <created>1566603792412</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1566603792412</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Update ArrayList: Added 'copy' constructor.">
+      <created>1566628463314</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1566628463314</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Update">
+      <created>1566628528088</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1566628528088</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Update LinkedList: Fixed bugs in addFirst. Fixed iterator problems.">
+      <created>1566631706100</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1566631706100</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Update: Fixed iterator position bug. Introduced isValidIteratorPosition method. Fixed bug in previous and hasPrevious methods.">
+      <created>1566633020356</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1566633020356</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Update ArrayList: Implemented ensureCapacity method.">
+      <created>1566637676405</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1566637676405</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Update LinkedList: Implemented removeFirst, removeLast and remove methods.">
+      <created>1566738412539</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1566738412539</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -600,7 +671,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65624000" />
+    <option name="totallyTimeSpent" value="91030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,7 +686,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22732124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24066168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -624,16 +695,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49252936" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49733192" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32790446" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49573106" weight="0.32790446" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50747067" side_tool="true" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -650,20 +721,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added LinkedList. Implemented size, addFirst, addLast, add and iterator methods. Implemented LinkedListIterator." />
-    <MESSAGE value="Added IList interface. Update LinkedList: Implemented isEmpty and clear method." />
-    <MESSAGE value="Update IList: Added indexOf and lastIndexOf methods. Update LinkedList: Implemented indexOf and lastIndexOf methods." />
-    <MESSAGE value="Update IList: Added toArray method. Update LinkedList: Implemented toArray method." />
-    <MESSAGE value="Update ICollection: Added contains method. Update LinkedList: Implemented contains method." />
-    <MESSAGE value="Update IList: Added get method." />
-    <MESSAGE value="Update LinkedList: Implemented get method." />
-    <MESSAGE value="Update LinkedList: Added regions" />
-    <MESSAGE value="Update ICollection: Added addAll method." />
-    <MESSAGE value="Update LinkedList: Implemented addAll method." />
-    <MESSAGE value="Update LinkedList: Added constructor" />
-    <MESSAGE value="Update LinkedList: null check" />
-    <MESSAGE value="Update IList: Removed method toArray." />
-    <MESSAGE value="Update ICollection: Added method toArray." />
     <MESSAGE value="Update LinkedList: Implemented getFirst and getLast methods." />
     <MESSAGE value="Update ArrayList: Added constructors." />
     <MESSAGE value="Update ArrayList: Implemented size, isEmpty, clear and get methods." />
@@ -673,9 +730,23 @@
     <MESSAGE value="Update LinkedList" />
     <MESSAGE value="Update ArrayList" />
     <MESSAGE value="Update LinkedList: Implemented listIterator and listIterator(index) methods." />
-    <MESSAGE value="Update" />
     <MESSAGE value="Update project structure: Added datastructures.interfaces package." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project structure: Added datastructures.interfaces package." />
+    <MESSAGE value="Update IList: Added listIterator and listIterator(index) methods." />
+    <MESSAGE value="Update IListIterator: Added hasPrevious and previous methods." />
+    <MESSAGE value="Update ArrayList, LinkedList: Implemented listIterator, listIterator(index) methods." />
+    <MESSAGE value="Update ArrayList, LinkedList: Implemented set method." />
+    <MESSAGE value="Update IList: Added set method." />
+    <MESSAGE value="Added AbstractList. Class to be extended by other IList implementations in order to limit code repetitions." />
+    <MESSAGE value="Update ArrayList: extends AbstractList." />
+    <MESSAGE value="Update LinkedList: extends AbstractList." />
+    <MESSAGE value="Update LinkedList, ArrayList." />
+    <MESSAGE value="Update ArrayList: Added 'copy' constructor." />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Update LinkedList: Fixed bugs in addFirst. Fixed iterator problems." />
+    <MESSAGE value="Update: Fixed iterator position bug. Introduced isValidIteratorPosition method. Fixed bug in previous and hasPrevious methods." />
+    <MESSAGE value="Update ArrayList: Implemented ensureCapacity method." />
+    <MESSAGE value="Update LinkedList: Implemented removeFirst, removeLast and remove methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update LinkedList: Implemented removeFirst, removeLast and remove methods." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -734,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="672" column="26" selection-start-line="672" selection-start-column="19" selection-end-line="672" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -759,20 +823,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProgramArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ProgramUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18568">
-          <caret line="898" column="33" selection-start-line="898" selection-start-column="33" selection-end-line="898" selection-end-column="33" />
+        <state relative-caret-position="1649">
+          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
           <folding>
             <element signature="e#15878#15879#0" expanded="true" />
             <element signature="e#15927#15928#0" expanded="true" />
@@ -786,93 +869,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ProgramUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="198">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ProgramLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="306">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state relative-caret-position="198">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+        <state relative-caret-position="220">
+          <caret line="310" column="51" lean-forward="true" selection-start-line="309" selection-start-column="12" selection-end-line="310" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#4465#4466#0" expanded="true" />
-            <element signature="e#4494#4495#0" expanded="true" />
-            <element signature="e#4520#4521#0" expanded="true" />
-            <element signature="e#4556#4557#0" expanded="true" />
-            <element signature="e#4648#4649#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#4752#4753#0" expanded="true" />
-            <element signature="e#4788#4789#0" expanded="true" />
-            <element signature="e#5412#5413#0" expanded="true" />
-            <element signature="e#5468#5469#0" expanded="true" />
-            <element signature="e#6298#6299#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProgramArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
+        <state relative-caret-position="484">
+          <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#3441#3442#0" expanded="true" />
-            <element signature="e#3478#3479#0" expanded="true" />
-            <element signature="e#3524#3525#0" expanded="true" />
-            <element signature="e#3562#3563#0" expanded="true" />
-            <element signature="e#4101#4102#0" expanded="true" />
-            <element signature="e#4146#4147#0" expanded="true" />
-            <element signature="e#4191#4192#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
-            <element signature="e#4299#4300#0" expanded="true" />
-            <element signature="e#4335#4336#0" expanded="true" />
-            <element signature="e#4384#4385#0" expanded="true" />
-            <element signature="e#4419#4420#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#4160#4161#0" expanded="true" />
+            <element signature="e#4205#4206#0" expanded="true" />
+            <element signature="e#4362#4363#0" expanded="true" />
+            <element signature="e#4405#4406#0" expanded="true" />
           </folding>
         </state>
       </provider>
