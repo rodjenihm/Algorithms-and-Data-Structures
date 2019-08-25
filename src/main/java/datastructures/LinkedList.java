@@ -4,7 +4,6 @@ import datastructures.interfaces.ICollection;
 import datastructures.interfaces.IList;
 import datastructures.interfaces.IListIterator;
 
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class LinkedList<E> extends AbstractList<E> implements IList<E> {
@@ -41,6 +40,65 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
             return iterator;
         }
     }
+
+    private void linkFirst(E item) {
+        Node newNode = new Node(item);
+        if (root == null) {
+            newNode.prev = null;
+            newNode.next = null;
+            root = newNode;
+            tail = newNode;
+        } else {
+            newNode.prev = null;
+            newNode.next = root;
+            root.prev = newNode;
+            root = newNode;
+        }
+    }
+
+    private void linkLast(E item) {
+        Node newNode = new Node(item);
+        if (root == null) {
+            linkFirst(item);
+        } else {
+            newNode.prev = tail;
+            newNode.next = null;
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+    private void unlinkFirst() {
+        Node temp = root.next;
+        root.prev = null;
+        root.next = null;
+        if (temp != null)
+            temp.prev = null;
+        else
+            tail = null;
+        root = temp;
+    }
+
+    private void unlinkLast() {
+        Node temp = tail.prev;
+        if (temp == null) {
+            unlinkFirst();
+        } else {
+            temp.next = null;
+            tail.prev = null;
+            tail = temp;
+        }
+    }
+
+    private void unlink(Node node) {
+        Node prev = node.prev;
+        Node next = node.next;
+        prev.next = next;
+        next.prev = prev;
+        node.prev = null;
+        node.next = null;
+        node.item = null;
+    }
     //endregion
 
     //region "Public methods"
@@ -61,34 +119,12 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
 
     //region "Add element"
     public void addFirst(E item) {
-        Node newNode = new Node(item);
-        if (root == null) {
-            newNode.prev = null;
-            newNode.next = null;
-            root = newNode;
-            tail = newNode;
-        } else {
-            newNode.prev = null;
-            newNode.next = root;
-            root.prev = newNode;
-            root = newNode;
-        }
+        linkFirst(item);
         size++;
     }
 
     public void addLast(E item) {
-        Node newNode = new Node(item);
-        if (root == null) {
-            newNode.prev = null;
-            newNode.next = null;
-            root = newNode;
-            tail = newNode;
-        } else {
-            newNode.prev = tail;
-            newNode.next = null;
-            tail.next = newNode;
-            tail = newNode;
-        }
+        linkLast(item);
         size++;
     }
 
@@ -107,6 +143,37 @@ public class LinkedList<E> extends AbstractList<E> implements IList<E> {
         return true;
     }
     //endregion
+
+    public E removeFirst() {
+        if (isEmpty())
+            throw new NoSuchElementException();
+        E value = root.item;
+        unlinkFirst();
+        size--;
+        return value;
+    }
+
+    public E removeLast() {
+        if (isEmpty())
+            throw new NoSuchElementException();
+        E value = tail.item;
+        unlinkLast();
+        size--;
+        return value;
+    }
+
+    public boolean remove(Object o) {
+        int indexToRemove = indexOf(o);
+        if (indexToRemove == -1)
+            return false;
+        if (indexToRemove == 0)
+            unlinkFirst();
+        else if (indexToRemove == size - 1)
+            unlinkLast();
+        else
+            unlink(nodeAtIndex(indexToRemove));
+        return true;
+    }
 
     @Override
     public int indexOf(Object o) {
