@@ -95,11 +95,11 @@ public class ArrayList<E> extends AbstractList<E> implements IList<E> {
     }
 
     @Override
-    public E set(int index, E element) {
+    public E set(int index, E item) {
         if (!isValidIndex(index))
             throw new IndexOutOfBoundsException();
-        elements[index] = element;
-        return element;
+        elements[index] = item;
+        return item;
     }
 
     @Override
