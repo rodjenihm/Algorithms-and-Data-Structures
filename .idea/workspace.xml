@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a243d109-5763-4b9b-b636-e32e0b03f22b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructures/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,32 +18,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#4160#4161#0" expanded="true" />
-                <element signature="e#4205#4206#0" expanded="true" />
-                <element signature="e#4362#4363#0" expanded="true" />
-                <element signature="e#4405#4406#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ProgramStack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="310" column="51" lean-forward="true" selection-start-line="309" selection-start-column="12" selection-end-line="310" selection-end-column="51" />
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,12 +32,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ProgramArrayList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="416">
+              <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1022#1023#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1529#1530#0" expanded="true" />
+                <element signature="e#1557#1558#0" expanded="true" />
+                <element signature="e#1605#1606#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1713#1714#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1803#1804#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,7 +94,6 @@
       <find>List</find>
       <find>E</find>
       <find>Type</find>
-      <find>value</find>
       <find>index</find>
       <find>indexOf(</find>
       <find>lastIndexOf(</find>
@@ -91,6 +105,10 @@
       <find>addA</find>
       <find>elements</find>
       <find>listIterator(</find>
+      <find>value</find>
+      <find>add(</find>
+      <find>addAll</find>
+      <find>element</find>
     </findStrings>
     <replaceStrings>
       <replace>SInglyLinkedList</replace>
@@ -110,8 +128,6 @@
         <option value="$PROJECT_DIR$/src/main/java/datastructures/List.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/SinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/datastructures/Stack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ProgramStack.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/IList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ICollection.java" />
         <option value="$PROJECT_DIR$/src/main/java/Program.java" />
@@ -119,13 +135,15 @@
         <option value="$PROJECT_DIR$/src/main/java/datastructures/IListIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ProgramUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/AbstractList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProgramArrayList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProgramLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructures/Stack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ProgramStack.java" />
       </list>
     </option>
   </component>
@@ -148,7 +166,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,6 +212,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProgramArrayList">
+  <component name="RunManager" selected="Application.ProgramStack">
     <configuration name="ProgramArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProgramArrayList" />
       <module name="algorithms-and-data-structures" />
@@ -264,10 +282,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProgramStack" />
         <item itemvalue="Application.ProgramArrayList" />
         <item itemvalue="Application.ProgramLinkedList" />
         <item itemvalue="Application.ProgramUtils" />
-        <item itemvalue="Application.ProgramStack" />
         <item itemvalue="Application.ProgramSinglyLinkedList" />
       </list>
     </recent_temporary>
@@ -317,42 +335,8 @@
       <workItem from="1566637169428" duration="1495000" />
       <workItem from="1566644934239" duration="4145000" />
       <workItem from="1566717303471" duration="2409000" />
-      <workItem from="1566735330133" duration="5890000" />
-    </task>
-    <task id="LOCAL-00002" summary="Update SinglyLinkedList">
-      <created>1565207458145</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1565207458145</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update SinglyLinkedList: Implemented addAll method.">
-      <created>1565208486767</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1565208486767</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update SinglyLinkedList: Implemented containsAll method.">
-      <created>1565210462203</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1565210462203</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added Stack.java">
-      <created>1565227598762</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1565227598762</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update Stack: Implemented peek, empty and push methods.">
-      <created>1565229769772</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1565229769772</updated>
+      <workItem from="1566735330133" duration="6758000" />
+      <workItem from="1566827427343" duration="3570000" />
     </task>
     <task id="LOCAL-00007" summary="Added LinkedList. Implemented size, addFirst, addLast, add and iterator methods. Implemented LinkedListIterator.">
       <created>1565668556360</created>
@@ -662,7 +646,42 @@
       <option name="project" value="LOCAL" />
       <updated>1566738412539</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Update ICollection: Added remove method.">
+      <created>1566747657696</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1566747657696</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Update ArrayList, LinkedList: Implemented remove method. Fixed ArrayListIterator bug.">
+      <created>1566747695729</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1566747695729</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Update workspace.xml">
+      <created>1566747710631</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1566747710631</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Update IList: Added remove method.">
+      <created>1566748434093</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1566748434093</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Update ArrayList, LinkedList: Implemented remove method.">
+      <created>1566748457842</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1566748457842</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -671,7 +690,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91030000" />
+    <option name="totallyTimeSpent" value="95468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,7 +705,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24066168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24332978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -695,16 +714,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49252936" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4914621" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49733192" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49573106" weight="0.32790446" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49466383" weight="0.32790446" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50747067" side_tool="true" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5085379" side_tool="true" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -721,11 +740,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update LinkedList: Implemented getFirst and getLast methods." />
-    <MESSAGE value="Update ArrayList: Added constructors." />
-    <MESSAGE value="Update ArrayList: Implemented size, isEmpty, clear and get methods." />
-    <MESSAGE value="Update ArrayList: Implemented indexOf, lastIndexOf and contains methods." />
-    <MESSAGE value="Update ArrayList: Implemented add, addAll and toArray methods. Implemented ArrayListIterator." />
     <MESSAGE value="Added IListIterator interface." />
     <MESSAGE value="Update LinkedList" />
     <MESSAGE value="Update ArrayList" />
@@ -746,7 +760,12 @@
     <MESSAGE value="Update: Fixed iterator position bug. Introduced isValidIteratorPosition method. Fixed bug in previous and hasPrevious methods." />
     <MESSAGE value="Update ArrayList: Implemented ensureCapacity method." />
     <MESSAGE value="Update LinkedList: Implemented removeFirst, removeLast and remove methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update LinkedList: Implemented removeFirst, removeLast and remove methods." />
+    <MESSAGE value="Update ICollection: Added remove method." />
+    <MESSAGE value="Update ArrayList, LinkedList: Implemented remove method. Fixed ArrayListIterator bug." />
+    <MESSAGE value="Update workspace.xml" />
+    <MESSAGE value="Update IList: Added remove method." />
+    <MESSAGE value="Update ArrayList, LinkedList: Implemented remove method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ArrayList, LinkedList: Implemented remove method." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -782,8 +801,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ProgramSinglyLinkedList.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/SinglyLinkedList.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/Stack.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProgramStack.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ListIterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1987">
@@ -824,34 +841,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ProgramUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
@@ -869,20 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ProgramLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -893,34 +868,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProgramArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state relative-caret-position="440">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#382#383#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
             <element signature="e#638#639#0" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IListIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="310" column="51" lean-forward="true" selection-start-line="309" selection-start-column="12" selection-end-line="310" selection-end-column="51" />
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9660">
+          <caret line="286" column="33" lean-forward="true" selection-start-line="286" selection-start-column="33" selection-end-line="286" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#7627#7628#0" expanded="true" />
+            <element signature="e#7665#7666#0" expanded="true" />
+            <element signature="e#9661#9662#0" expanded="true" />
+            <element signature="e#9693#9694#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProgramArrayList.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="197">
+          <caret line="620" column="29" selection-start-line="620" selection-start-column="29" selection-end-line="620" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/ICollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/interfaces/IList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2508">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -929,18 +956,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+        <state relative-caret-position="160">
+          <caret line="141" column="53" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#4160#4161#0" expanded="true" />
-            <element signature="e#4205#4206#0" expanded="true" />
-            <element signature="e#4362#4363#0" expanded="true" />
-            <element signature="e#4405#4406#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructures/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+          <folding>
+            <element signature="e#2838#2839#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProgramStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
