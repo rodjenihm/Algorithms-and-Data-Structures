@@ -27,4 +27,26 @@ public class ICollections {
         }
         return max;
     }
+
+    public static <T extends Comparable> T min(ICollection<T> c) {
+        Iterator<T> it = c.iterator();
+        T min = it.next();
+        while (it.hasNext()) {
+            T t = it.next();
+            if (t.compareTo(min) < 0)
+                min = t;
+        }
+        return min;
+    }
+
+    public static <T> T min(ICollection<T> c, Comparator<T> comp) {
+        Iterator<T> it = c.iterator();
+        T min = it.next();
+        while (it.hasNext()) {
+            T t = it.next();
+            if (comp.compare(t, min) < 0)
+                min = t;
+        }
+        return min;
+    }
 }
