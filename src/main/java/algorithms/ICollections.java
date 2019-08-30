@@ -6,6 +6,8 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 public class ICollections {
+
+    //region "max"
     public static <T extends Comparable> T max(ICollection<T> c) {
         Iterator<T> it = c.iterator();
         T max = it.next();
@@ -27,7 +29,9 @@ public class ICollections {
         }
         return max;
     }
+    //endregion
 
+    //region "min"
     public static <T extends Comparable> T min(ICollection<T> c) {
         Iterator<T> it = c.iterator();
         T min = it.next();
@@ -49,4 +53,5 @@ public class ICollections {
         }
         return min;
     }
+    //endregion
 }
